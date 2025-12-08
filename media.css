@@ -1,0 +1,22 @@
+.box{
+	height: 50vh;
+	background-color: aqua;
+	width: 100vw;
+	display: flex;
+	font-size: 40px;
+}
+.items{
+	height: 100px;
+	width:100px;
+	background-color: beige;
+	margin:20px;
+
+}
+@media screen and (min-width:780px) and (max-width:1430px){
+
+.box{
+	flex-wrap:wrap;
+	font-size: 20px;
+	padding:2px
+}
+}
