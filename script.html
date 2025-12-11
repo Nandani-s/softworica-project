@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+	<!-- <div>
+		<h1 > your first name is <span id="name1"> </span></h1>
+		<h1>your last name is <span id="name2"></span></h1>
+
+	</div>
+	
+	<p id="age1"></p> -->
+	<div class="flex flex-col justify-center  items-center">
+	   <div class=" my-12 h-212 w-124 bg-slate-700 text-white rounded-xl ">
+		<h1 class="font-bold text-center py-2">REGSITRATION FORM</h1>
+		<h1>
+			<label for="text" class="mx-12 my-2">First Name</label> <br>
+			<input type="text" id="inputname" class="my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			<label for="text" class="mx-12 my-2">Last Name</label> <br>
+			<input type="text" id="inputlastname" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"><br>
+
+			<label for="email" class="mx-12 my-2">Email</label> <br>
+			<input type="Email" name="" id="inputemail" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			<label for="Password" class="mx-12 my-2">Password</label> <br>
+			<input type="Password" name="" id="inputpassword" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+
+			<label for="phone" class="mx-12 my-2">Phone</label> <br>
+			<input type="phone" name="" id="inputphone" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			<label for="address" class="mx-12 my-2">Address</label> <br>
+			<input type="address" name="" id="inputaddress" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			<label for="dob" class="mx-12 my-2">Date of birth</label> <br>
+			<input type="dob" name="" id="inputdob" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			<label for="age" class="mx-12 my-2">Age</label> <br>
+			<input type="number" name="" id="inputage" class="my-2  border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			<label for="class" class="mx-12 my-2">Class</label> <br>
+			<input type="number" name="" id="inputclass" class=" my-2 border border-white rounded-xl py-2 w-96 mx-12"> <br>
+
+			
+
+		</h1>
+
+
+
+
+
+		<div class="flex justify-center py-4">
+            <button onclick="showname()" class=" mx-4 px-4 px-4 border rounded-xl h-12 bg-white text-black">Show name</button>
+		</div>
+		<div class="bg-sky-200 h-108 w-124 rounded-xl my-4">
+			<h1 class="font-bold text-lg text-red-500 text-center">OUTPUT</h1>
+		<h1 id="shownameinh1" class="text-red-800 px-12 py-2 text-lg "></h1>
+		<h2 id="shownameinh2" class="text-red-800 px-12 py-2 text-lg "></h2>
+		<p id="shownameinp" class="text-red-800 px-12 py-2 text-lg "></p>
+		<h3 id="shownameinh3" class="text-red-800 px-12 py-2 text-lg "></h3>
+		<h4 id="shownameinh4" class="text-red-800 px-12 py-2 text-lg "></h4>
+	     <h5 id="shownameinh5" class="text-red-800 px-12 py-2 text-lg "></h5>
+		 <h6 id="shownameinh6" class="text-red-800 px-12 py-2 text-lg "></h6>
+		 <p id="shownameinp2" class="text-red-800 px-12 py-2 text-lg "></p>
+		 <p id="shownameinp3" class="text-red-800 px-12 py-2 text-lg "></p>
+		 </div>
+	 </div>
+	</div>
+
+
+
+	<script>
+
+		function showname(){
+			const name = document.getElementById('inputname').value 
+			const name2 = document.getElementById('inputlastname').value
+			const email = document.getElementById('inputemail').value
+			const password = document.getElementById('inputpassword').value
+			const phone = document.getElementById('inputphone').value
+			const address = document.getElementById('inputaddress').value
+			const dob = document.getElementById('inputdob').value
+			const age = document.getElementById('inputage').value
+			const class1 = document.getElementById('inputclass').value
+
+
+
+
+			document.getElementById('shownameinh1').innerHTML = "Your First name is "+ name
+			document.getElementById('shownameinh2').innerHTML = "Your Last name is "+ name2
+			document.getElementById('shownameinh3').innerHTML = "Your Email is "+ email
+			document.getElementById('shownameinp').innerHTML = "Your Password is"+ password
+			document.getElementById('shownameinh4').innerHTML = "Your Phone is "+ phone
+			document.getElementById('shownameinh5').innerHTML = "Your Address is "+ address
+			document.getElementById('shownameinh6').innerHTML = "Your DOB is "+ dob
+			document.getElementById('shownameinp2').innerHTML = "Your Age is "+ age
+			document.getElementById('shownameinp3').innerHTML = "Your Class is "+ class1
+
+		}
+		//const name1 = prompt("your first name");
+		//const name2 = prompt("your last name")
+		//const age1 = prompt("your age");
+		
+		//console.log(name);
+		//console.log(age);
+		//console.table([name, age])
+
+		//document.getElementById('name1').innerHTML = name1
+		//document.getElementById('name2').innerHTML = name2
+		//document.getElementById('age1').innerHTML = age1
+
+
+
+	</script>
+
+	<!-- <script src="./select.js"></script> -->
+</body>
+
+</html>
