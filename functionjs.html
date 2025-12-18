@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+	<div class="flex flex-col justify-center  items-center">
+		<div class=" my-12 h-96 w-124 bg-slate-700 text-white rounded-xl ">
+			<h1 class="font-bold text-center py-2">REGSITRATION FORM</h1>
+			<h1>
+				<label for="text" class="mx-12 my-2">First Name</label> <br>
+				<h1 id="showerror" class="text-red-800 px-12 py-2 text-lg "></h1>
+				<input type="text" id="inputname" class="my-2 border border-white rounded-xl py-2  px-4 w-96 mx-12">
+				<br>
+
+
+				<label for="text" class="mx-12 my-2">Last Name</label> <br>
+				<h1 id="showerror2" class="text-red-800 px-12 py-2 text-lg "></h1>
+				<input type="text" id="inputlastname"
+					class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"><br>
+
+				<label for="email" class="mx-12 my-2">Email</label> <br>
+				<h1 id="showerror3" class="text-red-800 px-12 py-2 text-lg "></h1>
+				<input type="Email" name="" id="inputemail"
+					class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"> <br>
+			</h1>
+
+
+
+
+
+			<div class="flex justify-center py-4">
+				<button onclick="showname()" class=" mx-4 px-4 px-4 border rounded-xl h-12 bg-white text-black">Show Details</button>
+			</div>
+			<div class="bg-sky-200  w-124 rounded-xl my-4">
+				<h1 class="font-bold text-lg text-red-500 text-center">OUTPUT</h1>
+				
+				<h1 id="shownameinh1" class="text-red-800 px-12 py-2 text-lg "></h1>
+				<h2 id="shownameinh2" class="text-red-800 px-12 py-2 text-lg "></h2>
+				<h2 id="shownameinh3" class="text-red-800 px-12 py-2 text-lg "></h2>
+			</div>
+		</div>
+	</div>
+	<script>
+
+		function showname() {
+			const name = document.getElementById('inputname').value
+			const name2 = document.getElementById('inputlastname').value
+			const email = document.getElementById('inputemail').value
+
+			if (name == ""  ) {
+				document.getElementById('showerror').innerHTML = "Please enter the details"
+			} else {
+				document.getElementById('shownameinh1').innerHTML = "Your First name is " + name.toUpperCase() //upper case pathaunxa
+				
+			}
+
+			if (name2 == ""  ) {
+				document.getElementById('showerror2').innerHTML = "Please enter the details"
+			} else {
+				document.getElementById('shownameinh2').innerHTML = "Your Last name is " + name2.toLowerCase() //lower case ma show hunxa
+			}
+			if (email == ""  ) {
+				document.getElementById('showerror3').innerHTML = "Please enter the details"
+			} else {
+
+
+				document.getElementById('shownameinh3').innerHTML = "Your Email is " + email
+				
+			}
+			
+
+            
+
+
+
+
+		}
+	</script>
+
+	<!-- <script src="./select.js"></script> -->
+</body>
+
+</html>

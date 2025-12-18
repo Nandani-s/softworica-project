@@ -23,13 +23,14 @@
 			<label for="text" class="mx-12 my-2">First Name</label> <br>
 			<input type="text" id="inputname" class="my-2 border border-white rounded-xl py-2  px-4 w-96 mx-12"> <br>
 
+
 			<label for="text" class="mx-12 my-2">Last Name</label> <br>
 			<input type="text" id="inputlastname" class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"><br>
 
 			<label for="email" class="mx-12 my-2">Email</label> <br>
 			<input type="Email" name="" id="inputemail" class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"> <br>
 
-			<label for="Password" class="mx-12 my-2">Password</label> <br>
+			<!-- <label for="Password" class="mx-12 my-2">Password</label> <br>
 			<input type="Password" name="" id="inputpassword" class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"> <br>
 
 
@@ -46,7 +47,7 @@
 			<input type="number" name="" id="inputage" class="my-2  border border-white rounded-xl py-2 px-4  w-96 mx-12"> <br>
 
 			<label for="class" class="mx-12 my-2">Class</label> <br>
-			<input type="number" name="" id="inputclass" class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"> <br>
+			<input type="number" name="" id="inputclass" class=" my-2 border border-white rounded-xl py-2 px-4  w-96 mx-12"> <br> -->
 
 			
 
@@ -59,8 +60,9 @@
 		<div class="flex justify-center py-4">
             <button onclick="showname()" class=" mx-4 px-4 px-4 border rounded-xl h-12 bg-white text-black">Show Details</button>
 		</div>
-		<div class="bg-sky-200 h-108 w-124 rounded-xl my-4">
+		<div class="bg-sky-200  w-124 rounded-xl my-4">
 			<h1 class="font-bold text-lg text-red-500 text-center">OUTPUT</h1>
+		<h1 id="showerror" class="text-red-800 px-12 py-2 text-lg "></h1>	
 		<h1 id="shownameinh1" class="text-red-800 px-12 py-2 text-lg "></h1>
 		<h2 id="shownameinh2" class="text-red-800 px-12 py-2 text-lg "></h2>
 		<p id="shownameinp" class="text-red-800 px-12 py-2 text-lg "></p>
@@ -82,14 +84,17 @@
 			const name = document.getElementById('inputname').value 
 			const name2 = document.getElementById('inputlastname').value
 			const email = document.getElementById('inputemail').value
-			const password = document.getElementById('inputpassword').value
+			<!-- const password = document.getElementById('inputpassword').value
 			const phone = document.getElementById('inputphone').value
 			const address = document.getElementById('inputaddress').value
 			const dob = document.getElementById('inputdob').value
 			const age = document.getElementById('inputage').value
-			const class1 = document.getElementById('inputclass').value
+			const class1 = document.getElementById('inputclass').value -->
 
 
+            if(name=="" || name2 == ""|| email==""|| password==""|| phone==""|| address==""|| dob==""|| age==""|| class1==""){
+			      document.getElementById('showerror').innerHTML = "Please enter the details"
+			}else{
 
 
 			document.getElementById('shownameinh1').innerHTML = "Your First name is "+ name
@@ -102,7 +107,15 @@
 			document.getElementById('shownameinp2').innerHTML = "Your Age is "+ age
 			document.getElementById('shownameinp3').innerHTML = "Your Class is "+ class1
 
-		}
+	      }
+
+		  
+
+
+
+      	}
+
+
 		//const name1 = prompt("your first name");
 		//const name2 = prompt("your last name")
 		//const age1 = prompt("your age");

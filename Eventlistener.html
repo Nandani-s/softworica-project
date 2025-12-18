@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<Button id="box">Click me</Button>
+
+	<script>
+		const box = document.getElementById("box");
+
+		box.addEventListener("click", function(){
+			console.log("Button is clicked");
+		}) 
+		box.addEventListener("dblclick", function(){
+			alert("Button is clicked double");
+		})
+		box.addEventListener("mouseover", function(){
+			console.log("button is hover");
+		})
+		
+		box.addEventListener("mouseout", function(){
+			console.log("mouse is out");
+		})
+		box.addEventListener("keydown", function(){
+			console.log("key is down");
+		})
+		box.addEventListener("keyup", function(){
+			console.log("key is up");
+		})
+		box.addEventListener("submit", function(){
+			console.log("submit");
+		})
+		box.addEventListener("input", function(){
+			console.log("key is input");
+		})
+		
+
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="box">hi</div>
+	<div id="box">hello</div>
+	<p>there is a cat</p>
+	<div >
+		today date is <span id="date"></span> <br>
+		todays time is <span id="time"></span>
+	</div>
+	<script>
+		//selector
+		const box =document.getElementById("box").innerText
+		console.log(box);
+		const classbox = document.getElementsByClassName("box");
+		console.log(classbox[0].innerText);//dherai class haru hune vako vayerw array le denote garne
+
+
+		//date show
+		function showdate()
+		{
+			let d = new Date();
+			console.log(d.getFullYear());
+			console.log(d.getHours());
+			console.log(d.getDay());
+			console.log(d.getMonth());
+		
+			document.getElementById("date").innerHTML =`${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`
+			document.getElementById("time").innerHTML=`Hour${d.getHours()}- Minutes${d.getMinutes()}- Seconds${d.getSeconds()}- Miliseconds${d.getMilliseconds()}`
+		}
+		showdate()
+
+
+
+
+	</script>
+</body>
+</html>
