@@ -13,6 +13,7 @@
 	<div >
 		today date is <span id="date"></span> <br>
 		todays time is <span id="time"></span>
+		
 	</div>
 	<script>
 		//selector
@@ -22,6 +23,9 @@
 		console.log(classbox[0].innerText);//dherai class haru hune vako vayerw array le denote garne
 
 
+
+
+		
 		//date show
 		function showdate()
 		{
@@ -35,7 +39,12 @@
 			document.getElementById("time").innerHTML=`Hour${d.getHours()}- Minutes${d.getMinutes()}- Seconds${d.getSeconds()}- Miliseconds${d.getMilliseconds()}`
 		}
 		showdate()
-
+        
+		// seconds
+		setInterval(()=>{
+           // console.log("this change in 2 sec") 
+		   showdate()
+		},2000)
 
 
 
